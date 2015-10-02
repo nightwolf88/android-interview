@@ -37,8 +37,18 @@ Lập trình hướng đối tượng là cách lập trình dựa trên sự t�
 
 ***Thế nào là abstract class, interface, so sánh sự khác nhau giữa 2 khái niệm?***
 
-* *Abstract class:* 
+* *Abstract class:* có thể hiểu là một class cha cho tất cả các class con có cùng bản chất. Do đó, mỗi lớp con chỉ có thể kế thừa từ một lớp trừu tượng. Abstract class không cho phép tạo các thể hiện, vì vậy không thể tạo một đối tượng trực tiếp từ một abstract class.
 
-* *Interface:*
+* *Interface:* Interface có thể được xem là một mặt nạ cho tất cả các class có cùng cách thức hoạt động nhưng có thể khác nhau về bản chất. Từ đó một lớp con có thể kế thừa từ nhiều interface khác nhau để bổ sung đầy đủ cách thức hoạt động của mình (đa kế thừa).
 
 * *Sự khác nhau:*
+
+ * Abstract class có thể chứa các phương thức được cài đặt hoặc các biến, hằng có giá trị, còn interface thì không.
+
+ * Phương thức của abstract class có thể sử dụng access modifiers như private, public, protected. Interface mặc định là public và abstract
+
+ * Lớp con của abstract class chỉ cần định nghĩa lại những phương thức abstract, còn class implement interface thì phải định nghĩa tất cả các phương thức của interface
+
+ * Một lớp con của abstract class chỉ được kế thừa một lớp cha trừu tượng, còn một lớp con có thể implement nhiều interface cùng một lúc.
+
+ * Abstract class có thể kế thừ từ class khác và implement nhiều interface, còn interface thì chỉ có thể implement nhiều interface
