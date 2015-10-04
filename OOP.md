@@ -35,6 +35,8 @@ Lập trình hướng đối tượng là cách lập trình dựa trên sự t�
 
 * *Ghi đè (overriding):* là khả năng cho phép cài đặt lại một phương thức của lớp con từ lớp cha.
 
+* *Sự khác nhau giữa overloading và overriding:* 
+
 ***Thế nào là abstract class, interface, so sánh sự khác nhau giữa 2 khái niệm?***
 
 * *Abstract class:* có thể hiểu là một class cha cho tất cả các class con có cùng bản chất. Do đó, mỗi lớp con chỉ có thể kế thừa từ một lớp trừu tượng. Abstract class không cho phép tạo các thể hiện, vì vậy không thể tạo một đối tượng trực tiếp từ một abstract class.
@@ -52,3 +54,35 @@ Lập trình hướng đối tượng là cách lập trình dựa trên sự t�
  * Một lớp con của abstract class chỉ được kế thừa một lớp cha trừu tượng, còn một lớp con có thể implement nhiều interface cùng một lúc.
 
  * Abstract class có thể kế thừ từ class khác và implement nhiều interface, còn interface thì chỉ có thể implement nhiều interface
+
+## Các khái niệm
+
+***Khái niệm lớp, đối tượng?***
+
+* *Đối tượng:* là mọi thứ có thể nhìn thấy xung quanh ta, đối tượng có trạng thái và hành vi.
+
+* *Lớp:* là khuân mẫu mô tả trạng thái, hành vi của đối tượng.
+
+***Static field, static method?***
+
+* *Static field:* thuộc tính tĩnh là thuộc tính mang tính toàn cục của class, nghĩa là giá trị của thuộc tính đó không phụ thuộc vào từng đối tượng riêng lẻ của class đó.
+
+* *Static method:* Phương thức tĩnh là phương thức không phụ thuộc vào đối tượng của class. Nó có thể gọi trực tiếp mà không cần phải tạo đối tượng của class
+
+* *Ưu điểm:* Có thể dùng mà không cần phải tọa đối tượng của class => tiết kiệm bộ nhớ hơn
+
+* *Nhược điểm:* Chỉ truy xuất được đến các thuộc tính, phương thức tĩnh
+
+***Final keyword***
+
+*Class final:* là lớp không thể kế thừa
+
+*Variable final:* là biến không thể thay đổi giá trị => trờ thành hằng số
+
+*Method final:* là phương thức không thể ghi đè
+
+***Constructor & Destructor***
+
+* *Constructor:* là phương thức khởi tạo trạng thái của đối tượng, nó được gọi khi đối tượng được khởi tạo.
+
+* *Destructor:* là phương thức được tự động gọi khi đối tượng hủy
