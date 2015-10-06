@@ -81,8 +81,30 @@ Lập trình hướng đối tượng là cách lập trình dựa trên sự t�
 
 *Method final:* là phương thức không thể ghi đè
 
-***Constructor & Destructor***
+***Constructor***
 
-* *Constructor:* là phương thức khởi tạo trạng thái của đối tượng, nó được gọi khi đối tượng được khởi tạo.
+Là phương thức khởi tạo trạng thái của đối tượng, nó được gọi khi đối tượng được khởi tạo.
 
-* *Destructor:* là phương thức được tự động gọi khi đối tượng hủy
+*Các kiểu constructors:*
+
+* *Default constructor:* là phương thức khởi tọa không có tham số
+* *Parameterized Constructor:* là phương thức khởi tạo có tham số
+* *Copy Constructor:* copy một đối tượng từ một đối tượng đã tồn tại
+* *Static Constructor:*
+* *Private Constructor:
+
+***Destructor***
+
+Là phương thức được gọi khi đối tượng giải phóng, mục đích chính của detructor là giải phóng tài nguyên.
+
+***Function***
+
+* *Inline function:*
+* *Avirtual function:*
+* *isFriend function:*
+* *Finalize method:*
+
+***Type of arguments***
+
+* *Call by value:* 
+* *Call by reference:*
