@@ -62,16 +62,28 @@
 	
 ###Type of memory areas allocated by JVM
 
+* ***Heap memory:*** which is the storage for Java objects and arrays. Heap memory for objects is reclaimed by garbage collector. The heap
+* ***Non-Heap memory:*** which is used by Java to store, loaded classes and other meta-data, primitive data
+	
+
 ### Garbage collector
+
+Là bộ quản lý: cấp phát, thu hồi bộ nhớ. Khi một đối tượng tạo ra, GC sẽ cấp phát bộ nhớ cho đối tượng đó, và khi đối tượng không tham chiếu nào đến nữa, GC sẽ thu hồi bộ nhớ đã cấp phát cho đối tượng đó.
+
+### Các loại tham chiếu trong Java
+1. **Strong Reference:** là kiểu tham chiếu thường dùng nhất với kiểu phép gán =. Đối với Strong Reference là một liên kết mạnh, khi mà đối tượng còn có một tham chiếu đến nó thì đối tượng đó không thể giải phóng với bất kì hình thức nào
+2. **Soft Reference:** là kiểm tham chiếu mà đối tượng sẽ bị giải phóng khi thiếu bộ nhớ. Kiểu tham chiếu này thường dùng để cache đối tượng
+3. **Weak Reference:** 
+4. **Phantom Reference:**
 
 ###Synchronized
 
-### Java networking
+Một phương thức chỉ được gọi một lần duy nhất tại một thời điểm, multiple thread, thread safe
 
 ###Thread
 
-###IO
+Thread là một tiến trình tách ứng dụng ra một hoặc nhiều luồng khác nhau để cùng thực hiện nhiều nhiệm vụ cùng một lúc. Khi lập trình, công việc nào tốn nhiều time thì tách ra một thread riêng để main thread không bị gián đoạn.
 
 ###Exception
 
-###Concurrency
+Một exception là một vấn đề phát sinh trong quá trình thực hiện chương trình, có thể xảy ra với nhiều lí do khác nhau. Khi một exception như vậy xảy ra nếu không được xử lý thì sẽ làm cho chương tình ngừng hoạt động, không cho kết quả thực thi như mong muốn.
