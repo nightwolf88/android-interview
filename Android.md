@@ -7,7 +7,7 @@
 
 ### Android life cyrcle
 
-->![alt Androdi life cyrcle] (http://developer.android.com/intl/ja/images/activity_lifecycle.png)<-
+-> ![alt Androdi life cyrcle] (http://developer.android.com/intl/ja/images/activity_lifecycle.png) <-
 
 ### Some concept
 
