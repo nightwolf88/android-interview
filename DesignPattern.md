@@ -50,3 +50,62 @@ Interface là trái tim của design pattern, nghĩa là mọi thứ trong desig
 	* Bạn muốn thay đổi thuật toán khi sử dụng chương trình
 
 	Ví dụ: Việc sử dụng thuật toán sắp xếp: khi có rất nhiều dữ liệu thì sử dụng QuickSort, lúc khác chỉ có vài ba phần tử thì dùng sắp xếp nổi bọt đã ok rồi
+	
+### 5 nguyên lý lập trình (Solid principles)
+
+1. **Single Reponsibility Principle**
+
+	Một class chỉ nên giữ một trách nhiệm duy nhất (chỉ có thể sửa đổi class với một lí do duy nhất)
+	
+	Ví dụ, có một class như sau:
+	
+	```java
+	public class ReportManager {
+		public void readDataFromDb();
+		public void ProcessData();
+		public void PrintReport();
+	}
+	```
+1. **Open/Closed principle**
+
+	Có thể thoải mái mở rộng một class, nhưng không được sửa đổi bên trong class đó. Nghĩa là khi muốn thêm một chức năng cho chương trình, chúng ta nên viết một class mới kế thừa từ clas cũ, chứ không nên sửa class cũ.
+	
+1. **Liskov Substitution Principle**
+
+	Khi một lớp con kế thừa từ một lớp khác, nó sẽ không làm thay đổi hành vi của lớp đó.
+	
+	Ví dụ: Lớp Square không được phép thay đổi hành vi của lớp Rectangle (With và Height)
+	
+1. **Interface Segregation Principle**
+
+	Không nên cài đặt một interface nếu nó không được sử dụng đến. Điều này hay xảy ra khi một interface chứa nhiều hơn một chức năng, và chương trình chỉ cần một chức năng trong interface đó.
+	Ví dụ:
+	
+	```Java
+	public interface Animal {
+		void fly();
+		void run();
+		void bark();
+	}
+	
+	public class Bird implements Animal {
+		public void bark() {
+			// Do nothing
+		}
+		
+		public void run() {
+			// Write code about running of the bird
+		}
+		
+		public void fly() {
+			// Write code about flying of the bird
+		}
+	}
+	```
+	
+1. **Dependency Inversion Principle**
+
+	Các module cấp cao không nên phụ thuộc vào các modules cấp thấp, cả 2 nên phụ thuộc vào abstraction
+	
+	![alt Androdi life cyrcle] (http://laptrinh.vn/attachment.php?attachmentid=46&d=1415081902&thumb=1)
+	
