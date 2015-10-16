@@ -78,19 +78,63 @@
 Mô hình tập chung | Mô hình phân tán
 Repository gốc được lưu trên server | Mỗi thành viên sẽ có một repository
 
-Cơ chế hoạt động của 2 công cụ khác nhau: `SVN` theo mô hình tập chung, còn `Git` theo mô hình phân tán, đa số các hoạt động của git đều thực hiện ở local.
-
-``
-
 ### Libraries
 
-1. Retrofit
-2. OKHttp
-3. Fresco
-4. Stetho
-5. Event Bus
-6. Dependency Injection
-7. Cryptography
+1. **Networking**
+	1. Retrofit
+
+		REST API library for android
+	
+		*Benifest of using Retrofit:*
+	
+		* Đơn giản, dễ sử dụng, làm project đơn giản hơn, dễ update, maintain
+		* Xử lý nhiều trường hợp hay gặp phải sẵn cho người dùng
+		* Performance tốt, tốc độ vượt trội hơn hẳn so với sử dụng AsyncTask thông thường.
+
+	1. OKHttp
+
+		Library for HTTP request
+
+		* Support cache dữ liệu
+		* (Like retrofit)
+
+1. **Image downloading and caching**
+	1. Picaso
+		
+		Là thư viện download và cache ảnh. Dễ sử dụng (chỉ cần một dòng code)
+
+	1. Universal Image Loader
+
+		Là thử viện loading and downloading ảnh linh hoạt, dễ custom
+	
+	1. Fresco
+
+		Là thư viện loading and downloading image của facebook, được sử dụng trong hầu hết các ứng dụng của facebook
+		
+		*Feature:*
+		* *Memory:* `Bitmap` trong Android chiếm nhiều bộ nhớ, do đó, tần suất GC chạy nhiều dẫn đến app chậm, lag. `Fresco` đặt image vào một vùng nhớ đặc biệt (không phải heap), nơi mà image sẽ tự động release sau một khoảng thời gian không được hiển thị trên màn hình. Điều này cho phép ứng dụng chạy nhanh hơn, ít bị crash, và chạy mượt trên các thiết bị có bộ nhớ thấp
+		* *Streaming:* Như trong facebook, ban đầu sẽ load ảnh mờ (độ phân dải thấp trước), sau đó sẽ tải ảnh gốc sau
+		* Animation: Gifs image
+
+1. **Debuging**
+	1. Stetho
+		
+		Là công cụ debug cho ứng dụng android, sử dụng qua Chrome Developer Tools.
+		
+		*Feature:*
+		
+		* Network inspection: view request network: time, size, result, method...
+		* Database inspection: View database realtime
+		* View Hierarchy: 
+	
+	1. Infer
+
+		Là công cụ tối ưu code cho developer
+		
+8. Rebound
+9. Conceal
+10. EventBus
+11. Dependency Injection
 
 ### Cloud services: Parse, Bluemix
 
