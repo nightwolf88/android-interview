@@ -130,27 +130,67 @@ Repository gốc được lưu trên server | Mỗi thành viên sẽ có một 
 	1. Infer
 
 		Là công cụ tối ưu code cho developer
-		
-8. Rebound
-9. Conceal
-10. EventBus
-11. Dependency Injection
+
+1. **EventBus**
+
+	Hoạt động trên mô hình publisher/subscriber
+
+1. **Dependency Injection**
 
 ### Cloud services: Parse, Bluemix
+
+1. **What is cloud?**
+
+	Điện toán đám mây là một giải pháp cung cấp công nghệ thông tin như một dịch vụ.
+	
+2. **Parse**
+
+	Là một dịch vụ cloud, cung cấp các dịch vụ cloud database, push notification, analytics tracking.
+	
+3. **Bluemix**
 
 ### Social network: Facebook, Twitter
 
 ### Project
 
-1. Catalyst
-1. English Conversation
-1. Manman Pemba
-1. School App
-1. HDBackground
-1. Uprise Couple
-1. City Escape
-1. Event Management
-1. APOFactbook
+1. **Catalyst**
+
+	Cung cấp tập hợp các pattern đc phát triển dưới dạng pod modules cho các team khác của dễ dàng import vào project của họ.
+
+1. **English Conversation**
+
+	Ứng dụng học tiếng anh giao tiếp, bao gồm 100 bài conversation, các cụm từ thông dụng, cho phép người dùng nghe và thực hành bài hội thoại theo từng vai trong đoạn hội thoại.
+	
+	Practice sử dụng google voice recognition để thu phát âm của người dùng, sau đó so sánh với các kết quả trả về của google voice service để đánh giá người dùng đọc đúng hay sai.
+	
+	Ứng dụng hướng đến đem lại trải nghiệm tốt nhất cho người dùng, tạo cho người dùng cảm giác thích thú khi sử dụng ứng dụng.
+
+1. **Manman Pemba**
+1. **School App**
+
+	Ứng dụng giành cho phụ huynh để theo dõi và quản lí học sinh. Theo dõi lịch học, bài tập về nhà, vi phạm kỉ luật của học sinh.
+
+1. **HDBackground**
+
+	Ứng dụng xem ảnh HD với các chủ đề khác nhau
+
+1. **Uprise Couple**
+
+	Là ứng dụng hẹn hò (couple) kiểu app Tinder/Beetalk. Cho phép tìm kiếm, làm quen, kết bạn, trò chuyện với các bạn khác giới ở xung quanh mình.
+	
+	*Chatting feature:*
+
+1. **City Escape**
+
+	Game 2D điều khiển oto vượt chướng ngại vật
+
+1. **Event Management**
+
+	Ứng dụng quản lí sự kiện, sử dụng QR code để check-in khách đến dự sự kiện.
+
+1. **APOFactbook**
+
+	Là ứng dụng thống kê dữ liệu về: dân số, GDP, năng suất lao động, nhu cầu, vốn... của các nền kinh tế châu Á. 
 
 ### Google services (Map, GCM)
 
